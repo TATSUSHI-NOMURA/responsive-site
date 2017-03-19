@@ -2,12 +2,12 @@
   max-width: 100%;
   height: auto;
 }
-.main {
-  background-image:img src="./images/img_kanazawa.jpg";
+main {
   height: 500px;
   width: 100%;
   background-size: cover;
   background-position: center center;
+  background-image:url("../images/img_kanazawa.jpg")
 }
 
 .container {
@@ -15,14 +15,18 @@
   flex-direction: row;
 }
 .box2 {
+  background-color:#dddddd;
   border: none;
   margin: 20px;
   flex: 1;
   text-align: center
 }
-@media (max-width: 768px) {
+@media (max-width: 768px){
   .container {
     flex-direction: column;
+  }
+   main {
+    height: 250px;
   }
 }
 .box1 {
@@ -49,9 +53,8 @@
     text-decoration:none;
     display:block;
     text-align:center;
-    padding: 5px 0px 10px 0px;
-    margin: 10px 250px 10px 250px;
-    color:#fff;
+    margin:0 auto;
+    color:#fff000;
     background-color:#000000;
     border-radius:10px;
 }
